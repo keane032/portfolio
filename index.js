@@ -1,11 +1,13 @@
 const message = 'Roy keane.';
 const submsg = 'Desenvolvedor Web e Mobile, aficionado por pixel art.'
 
-// document.getElementById("myButton").onclick = function () {
-//   location.href = "www.yoursite.com";
-// };
+document.getElementById("lojaapp").onclick = function () {
+  window.open('https://play.google.com/store/apps/details?id=com.br.rpgboard');
+};
 
-// window.open('www.google.com.br', '_blank');
+document.getElementById("repositorioJogo").onclick = function () {
+  window.open('https://github.com/keane032/dungeon_explorer');
+};
 
 const typingPromises = (message, timeout) =>
   [...message].map(

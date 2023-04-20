@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="header">
+    <!-- todo -->
+    <!-- <header class="header">
         <a></a>
         <nav class="navbar">
-            <!-- <a href="#">Projetos</a>
-            <a href="#"></a> -->
             <a href="https://github.com/keane032">
                 <img id="contact" src="assets/github.svg"></img>
             </a>
@@ -21,58 +20,75 @@
                 <img id="contact" src="assets/in.png"></img>
             </a>
         </nav>
-    </header>
-    <img id="profile" alt="Avatar" src="./assets/eu.png" >
-
-    <div id="blackbox">
-        <div id="boxtitle">
-            <p id="title"></p><p id="titleCursor">|</p>
-        </div>
-        <div id="boxtitle">
-            <p id="subtitle"></p><p id="subtitleCursor"></p>
-        </div>
-    </div>
-
-   
-    <div id="box">      
-        <div>
-            <h3>Quem sou eu?</h3><br/> 
-            Sou um desenvolvedor Mobile e Web atraído pelas melhores tecnologias do mercado e aficionado por Pixel Art. Trabalhei em projetos usando JavaScript, React Native e flutter.<br/>
-            📚 Formado em Sistemas de Informação pela UFC.<br/>
-        </div>
-    </div>
-
-    <div id="box">      
-        <div>
-            <h3>Conhecimentos</h3><br/> 
-                Trabalhei com:<br/>
-            <p> 
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>FLUTTER</li>
-                <li>TYPESCRIPT</li>
-                <li>REACT-NATIVE</li>
-                <li>REDUX</li>
-                <li>GIT</li>
-            </p>
-        </div>
-    </div>
+    </header> -->
     
-    <div id="box">      
-        <h3>Projetos:</h3><br/>     
-        <!-- <embed src="https://keane032.github.io/dungeon_explorer/docs/#/" style="width:100%; height: 500px;"></br> -->
-       !!! Os icones e sprites dos projetos a seguir foram feitos por mim!!!
+    <div style="display: flex;">
+        <div id="blackbox">
+            <img id="profile" alt="Avatar" src="./assets/eu.png" >
+            <div id="boxtitle">
+                <p id="title"></p><p id="titleCursor">|</p>
+            </div>
+            <div id="boxtitle">
+                <p id="subtitle"></p><p id="subtitleCursor"></p>
+            </div>
+            <div style="display: flex; width: 150px; margin-left: auto; margin-right: auto; justify-content: space-between; margin-top: 10px;">
+                <a href="https://github.com/keane032">
+                    <img id="contact" src="assets/github.svg"></img>
+                </a>
+            <a href="https://www.linkedin.com/in/roy-avila/">
+                <img id="contact" src="assets/in.png"></img>
+            </a>
+            </div>
+            <!-- todo -->
+            <div style="justify-content: center; display: flex; margin-left: auto; margin-right: auto; margin-top: 40px;"> 
+                <button>DOWNLOAD CV</button>
+            </div>
+        </div>
+        <div style="width: 50%;">
+            <div id="box">      
+                <h3>Quem sou eu?</h3><br/> 
+                Sou um desenvolvedor Mobile e Web atraído pelas melhores tecnologias do mercado e aficionado por Pixel Art. Trabalhei em projetos usando JavaScript, React Native e flutter.<br/>
+                📚 Formado em Sistemas de Informação pela UFC.<br/>
+            </div>
+            <div id="box">          
+                <h3>Conhecimentos</h3><br/> 
+                Trabalhei com:<br/>
+                <p> 
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>FLUTTER</li>
+                    <li>TYPESCRIPT</li>
+                    <li>REACT-NATIVE</li>
+                    <li>REDUX</li>
+                    <li>GIT</li>
+                </p>
+            </div>
+        </div>
+            
     </div>
-        
+    <!-- todo -->
+    <!-- <div id="arrowDown">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div> -->
+   <div style=" width: 100%; border-radius: 10px; margin-bottom: 100px;">
+    
     <div id="projects">
-        <div class="flex-container">
+        <div class="text">      
+            <h3>Projetos:</h3><br/>     
+           !!! Os icones e sprites dos projetos a seguir foram feitos por mim!!!
+        </div>
+            <h3 class="text">RPG TOOLS</h3>
             <div id="card">
-                <div style="margin-right: 100px;">
-                    <img id="icon" src="./assets/screenone.jpeg" >
+                <div style="margin-right: 10px;">
+                    <img class="profile" src="./assets/screenone.jpeg" >
                 </div>
-                <div id="details">
-                        <div id="text">
-                            <h4>RPG TOOLS</h4>
+                <div style="margin-right: 100px;">
+                    <img class="profile" src="./assets/coin.jpeg" >
+                </div>
+                <div class="details">
+                    <div>
                         Um a app ainda em desenvolvimento feito em flutter para disponibilizar funções que auxilia pessoas a jogar RPG de mesa.
                         funções disponíveis:<br/>
                         <li>Jogar dados de 3 a 100 lados.</li>
@@ -80,29 +96,28 @@
                         <li>Lançar moedas.</li>
                     </div>
                     <div id="actions">
-                        <a href="https://play.google.com/store/apps/details?id=com.br.rpgboard">Loja</a>
+                        <button id="lojaapp">LOJA</button>
                     </div>
                 </div>
             </div>
+            <h4 class="text" >Dungeon Explorer</h4>
             <div id="card">
-                <div id="details">
-                <div id="text">
-                    <h4>Dungeon Explorer</h4>
+                <embed src="https://keane032.github.io/dungeon_explorer/docs/#/" style="width:100%; height: 500px; border-radius: 15px; margin-right: 20px;">
+                <div class="details">
+                <div>
                     Exemplo de jogo feito com flutter bonfire.<br> 
-                    Aperte START para Jogar/Testar.  
+                    Click em 'START' para Jogar/Testar.  
                     </br>
                     </br>
                     Use AWSD para se mover.
                 </div>
                 <div id="actions">
-                    <a href="https://github.com/keane032/dungeon_explorer">Repositorio</a>
+                    <button id="repositorioJogo">REPOSITORIO</button>
                 </div>
                 </div>
-                <embed src="https://keane032.github.io/dungeon_explorer/docs/#/" style="width:100%; height: 500px; border-radius: 15px;">
             </div>
-        </div>      
     </div>   
-     
+     </div>
     <script src="./index.js"></script>
 </body>
 </html>

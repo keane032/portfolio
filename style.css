@@ -1,10 +1,10 @@
 #box{
     border-radius: 5px;
     padding: 20px;
-    width: 50%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     font-family: monospace;
     font-size: 25px;
     color: rgb(240, 243, 149);
@@ -81,11 +81,6 @@ embed{
     margin-bottom: 10px;
 }
 
-.dark-mode {
-    background-color: black;
-    color: white;
-  }
-
 /* #title::after{
     content: '|';
     animation: blink .7s infinite;
@@ -115,29 +110,25 @@ embed{
     display: block;
 }
 
-.flex-container {
-    /* display: flex; */
-    height: auto;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
 #card{
-    /* height: auto; */
-    width: 100%;
-    margin: 10px;
-    border-radius: 20px;
-    border: 2px solid ;
+    width: 80%;
+    margin-bottom: 20px;
+    /* border-radius: 20px; */
+    /* border: 2px solid ; */
     color:  rgb(240, 243, 149);
     font-family: monospace;
     font-size: 20px;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+   
 }
 a{
     color: rgb(240, 243, 149);
 }
 
-#icon{
+.profile{
     width: 100%;
     height:auto;
     display: block; 
@@ -149,41 +140,75 @@ a{
 #projects{
     border-radius: 5px;
     padding: 20px;
-    width: 70%;
     margin-left: auto;
     margin-right: auto;
+    /* display: flex; */
 }
 
-#text{
+.text{
     padding: 15px;
     margin: 10px;
     text-align: justify;
+    color:rgb(240, 243, 149);
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
 }
 
-#details{
-    justify-content: space-between;
+.details{
+    /* justify-content: space-between; */
     flex-direction: column;
-    display: flex;
+    /* display: flex; */
+    overflow: hidden;
+}
+
+#arrowDown{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#arrowDown span{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-bottom: 1px solid  rgb(240, 243, 149);
+    border-right: 1px solid  rgb(240, 243, 149);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: fadeway 2s infinite;
+}
+
+@keyframes fadeway{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
 }
 
 button{
     height: 60px;
-    width: 90px;
+    width: 110px;
     background-color: transparent;
     border-color: rgb(240, 243, 149);
     border-radius: 10px;
     color:  rgb(240, 243, 149);
-}
-
-#actions > a {
-    float: right;
-    margin-right: 20px;
-    font-size: 30px;
+    /* float: right; */
+    /* margin-right: 50px; */
 }
 
 #actions{
-    bottom: 20px;     
-    margin-bottom: 20px;    
+    margin-top: 20px;
+    justify-content: center; 
+    display: flex;
 }
 
 #contact{
