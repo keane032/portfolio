@@ -159,6 +159,7 @@ a{
     /* justify-content: space-between; */
     flex-direction: column;
     /* display: flex; */
+    /* width: 45%; */
     overflow: hidden;
 }
 
