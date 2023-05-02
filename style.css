@@ -7,7 +7,7 @@
     margin-bottom: 0px;
     font-family: monospace;
     font-size: 25px;
-    color: rgb(240, 243, 149);
+    /* color: rgb(240, 243, 149); */
 }
 
 #boxtitle {
@@ -93,7 +93,6 @@ embed{
 }
 
 .projeto{
-    width: 80%;
     margin-bottom: 20px;
     color:rgb(240, 243, 149);
     font-family: monospace;
@@ -126,6 +125,10 @@ a{
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
+    width: 80%;
+    margin-bottom: 100px;
+    margin-top: 10px;
+    /* background-color: rgb(97, 92, 92); */
 }
 
 .text{
@@ -205,4 +208,25 @@ button{
 
 body{
     background-color: rgb(1, 44, 100);
+}
+
+.bio{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.bio::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 0 100px 100px 0;
+    border-color: #ddd  rgb(1, 44, 100);
+    transition: all ease .5s;
+}
+
+.bio:hover:before{
+    border-width: 0 150px 150px 0;
+    border-color: #eee  rgb(1, 44, 100);
 }
