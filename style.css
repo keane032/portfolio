@@ -141,7 +141,6 @@ embed{
     color: rgb(0, 128, 128);
 }
 
-
 @media (min-width: 1200px) {
     .projeto { grid-template-columns: repeat(2, 1fr); }
 } 
