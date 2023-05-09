@@ -91,16 +91,54 @@ embed{
     display: block;
 }
 
-.projeto{
-    margin-bottom: 20px;
-    color:rgb(240, 243, 149);
-    font-family: monospace;
+.projeto:last-of-type {
+    width: 100%;
+}
+
+.projeto a{
     font-size: 20px;
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    gap: 10px;
+    font-family: monospace;
+    color:  rgb(0, 128, 128);
+}
+
+.projeto li{
+    font-size: 20px;
+    font-family: monospace;
+    color:  rgb(0, 128, 128);
+}
+
+.projeto h3{
+    font-size: 20px;
+    font-family: monospace;
+    color:  rgb(0, 128, 128);
+}
+
+.projeto a {
+    display: block;
+    text-align: center;
+    background-color: rgb(1, 44, 100);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.projeto a:hover {
+    background-color: rgb(23, 87, 171);
+}
+
+.projeto{
+    width: 45%;
+    background-color: white;
+    margin-bottom: 40px;
+    height: 700px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 20px;
+    font-family: monospace;
+    color: rgb(0, 128, 128);
 }
 
 
@@ -114,20 +152,19 @@ a{
 
 .profile{ 
     display: block;
-    background-color: aqua;
     margin-left: auto;
     margin-right: auto;
-    height: 400px;
+    height: 300px;
 }
 
 #projects{
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    margin-bottom: 100px;
-    margin-top: 10px;
-    /* background-color: rgb(97, 92, 92); */
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
 }
 
 .text{
@@ -138,6 +175,10 @@ a{
     font-family: monospace;
     font-size: 25px;
     text-align: center;
+}
+
+.descricao{
+    background-color: white;
 }
 
 #arrowDown{
