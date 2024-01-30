@@ -1,5 +1,7 @@
 body{
     background-color: rgb(26, 24, 24);
+    padding: 0;
+    margin: 0;
 }
 
 .card{
@@ -22,8 +24,48 @@ body{
     display: flex;
     width: 100%;
     height: 800px;
+    margin-top: 50px;
     justify-content: center;
     background-color: rgb(15, 32, 54);
+}
+
+
+.text{
+    padding: 15px;
+    margin: 10px;
+    text-align: justify;
+    color: rgb(255, 255, 255);;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+}
+
+.projeto .text{
+    padding: 15px;
+    margin: 10px;
+    text-align: justify;
+    color: rgb(255, 255, 255);;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+#stacks img {
+    background-color: rgb(16, 58, 98);
+    border-radius: 5px;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: rgb(15, 32, 54);
+}
+
+#projects{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -34,19 +76,19 @@ body{
 .projeto a{
     font-size: 20px;
     font-family: monospace;
-    color:  rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 .projeto li{
     font-size: 20px;
     font-family: monospace;
-    color:  rgb(255, 255, 255);
+    color: rgb(255, 255, 255);;
 }
 
 .projeto h3{
     font-size: 20px;
     font-family: monospace;
-    color:  rgb(255, 255, 255);
+    color: rgb(255, 255, 255);;
 }
 
 .projeto a {
@@ -55,55 +97,55 @@ body{
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: 0.3s;
 }
 
+.descricao{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.descricao div{
+    color: rgb(255, 255, 252);;
+}
 
 .projeto{
     width: 45%;
     margin-bottom: 40px;
-    height: 700px;
+    height: 500px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     font-size: 20px;
     font-family: monospace;
-    background-color: #333;
-    border-color: rgb(127, 123, 123);
-    border-style: groove;
-    border-width: 2px 2px 2px 2px;
+    background-color: rgb(26, 24, 24);
+    border-color: rgb(254, 255, 255);
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 1200px) {
     .projeto { grid-template-columns: repeat(2, 1fr); }
 }
 
-.text{
-    padding: 15px;
-    margin: 10px;
-    text-align: justify;
-    color: white;
-    font-family: monospace;
-    font-size: 25px;
-    text-align: center;
-}
-
-.projeto .text{
-    padding: 15px;
-    margin: 10px;
-    text-align: justify;
-    color: white;
-    font-family: monospace;
-    font-size: 25px;
-    text-align: center;
-}
-
-#stacks img {
-    background-color: rgb(53, 53, 53);
-    border-radius: 5px;
-    border-width: 1px 1px 1px 1px;
+#actions a{
+    margin-top: 20px;
+    justify-content: center; 
+    display: flex;
+    border-color: rgb(254, 255, 255);
     border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    flex: none;
 }
+
+#actions a:hover{
+    background-color: #000000;
+}
+
+
 
 /* ===== */
 
@@ -155,20 +197,6 @@ body{
     animation: blink .7s infinite;
 }
 
-/* .header{
-    position: fixed;
-    width: 100%;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    background-color: rgb(1, 44, 100);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
-
 .navbar{
     float: right;
     justify-content: space-between;
@@ -211,15 +239,6 @@ a{
     height: 300px;
 }
 
-#projects{
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    /* padding: 20px; */
-}
 
 
 #arrowDown{
@@ -261,12 +280,6 @@ button{
     border-color: rgb(240, 243, 149);
     border-radius: 10px;
     color:  rgb(240, 243, 149);
-}
-
-#actions{
-    margin-top: 20px;
-    justify-content: center; 
-    display: flex;
 }
 
 #contact{
@@ -315,6 +328,7 @@ button{
     justify-content: space-around;
     align-items: center;
     z-index: 1000;  
+    font-family: monospace;
  }
 
 header > h1 {

@@ -9,18 +9,6 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- todo -->
-    <!-- <header class="header">
-        <a></a>
-        <nav class="navbar">
-            <a href="https://github.com/keane032">
-                <img id="contact" src="assets/github.svg"></img>
-            </a>
-            <a href="https://www.linkedin.com/in/roy-avila/">
-                <img id="contact" src="assets/in.png"></img>
-            </a>
-        </nav>
-    </header> -->
 
     <header>
         <h1>Portfólio</h1>
@@ -28,7 +16,6 @@
             <a class="tab" href="#inicio">Inicio</a>
             <a class="tab" href="#stacks">Stacks</a>
             <a class="tab" href="#projetos">Projetos</a>
-            <a class="tab" href="#stacks">Stacks</a>
         </div>
     </header>
 
@@ -81,33 +68,32 @@
     </div>
         <div id="projects">
             <div class="projeto">
-                <h3 class="text">RPG TOOLS</h3>
-                <div style="display: flex; background-color: rgb(0, 128, 128);;">
-                    <img class="profile" src="./assets/screenone.jpeg" >
-                    <img class="profile" src="./assets/coin.jpeg" >
+                <div style="display: flex;">
+                    <img style="width: 20%; height: 150px;" class="profile" src="./assets/screenone.jpeg" >
+                    <img style="width: 20%; height: 150px;" class="profile" src="./assets/coin.jpeg" >
                 </div>
-                    <div class="descricao">
-                        <div>
-                            Um a app ainda em desenvolvimento feito em flutter para disponibilizar funções que auxilia pessoas a jogar RPG de mesa.<br/>
-                            Funções disponíveis:<br/>
-                            <li>Jogar dados de 3 a 100 lados.</li>
-                            <li>Dois temas diferentes.</li>
-                            <li>Lançar moedas.</li>
-                        </div>
-                        <img width="25%" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-ar21.svg">
-                        <div id="actions">
-                            <a id="lojaapp">LOJA</a>
-                        </div>
+                <div class="descricao">
+                    <h3 class="text">RPG TOOLS</h3>
+                    <div>
+                        Um a app ainda em desenvolvimento feito em flutter para disponibilizar funções que auxilia pessoas a jogar RPG de mesa.<br/>
+                        Funções disponíveis:<br/>
+                        <li>Jogar dados de 3 a 100 lados.</li>
+                        <li>Dois temas diferentes.</li>
+                        <li>Lançar moedas.</li>
                     </div>
+                    <div id="actions">
+                        <a id="lojaapp">LOJA</a>
+                    </div>
+                </div>
             </div>
             <div class="projeto">
-                <h3 class="text">Github API</h3>
                 <picture>
                     <source media="(max-width: 600px)" srcset="./assets/angular-small.png">
-                    <img class="profile" style="width: 100%; height: 300px;" src="./assets/angular.png" >
+                    <img class="profile" style="width: 70%; height: 160px;" src="./assets/angular.png" >
                 </picture>
                 <div class="descricao">
                     <div >
+                        <h3 class="text">Github API</h3>
                         Uma aplicação feita e angular que consome a api do github.<br/>
                         Funções disponíveis:
                         <br/>
@@ -115,20 +101,17 @@
                         <li>Lista Resumo pelo nick do usuario</li>
                         <li>Lista Repositorios</li>
                     </div>
-                    <img width="25%" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg">
-                    <img width="25%" src="https://www.vectorlogo.zone/logos/netlifyapp_watercss/netlifyapp_watercss-ar21.svg">
-                    <img width="10%" src="https://www.vectorlogo.zone/logos/angular/angular-icon.svg">
                     <div id="actions">
                         <a href="https://keane032.github.io/angular-portfolio/?name=keane032">Site</a>
                     </div>
                 </div>
             </div>
             <div class="projeto" style="height: 800px;">
-                <h3 class="text" >Dungeon Explorer</h3>
                 <embed src="https://keane032.github.io/dungeon_explorer/docs/#/" 
                     style="display: flex; width: 100%; height: 500px; border-radius: 15px; ">
                 <div class="descricao">
                     <div >
+                        <h3 class="text" >Dungeon Explorer</h3>
                         Exemplo de jogo feito com flutter bonfire.
                         <br/>
                         Bonfire e uma lib para flutter para criação de jogos estilo o RPG. 
@@ -138,17 +121,12 @@
                 </br>
                         Use AWSD para se mover.
                     </div>
-                    <img width="10%" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-ar21.svg">
                         <div id="actions">
                             <a id="repositorioJogo">REPOSITORIO</a>
                         </div>
                 </div>
             </div>
         </div>
-        <div class="text">      
-            <h3>Importante</h3><br/>     
-           !!!  Ha mais projetos no meu github so da uma passada la e olhar. !!!
-        </div>  
     <script src="./index.js"></script>
 </body>
 </html>
