@@ -1,34 +1,87 @@
-body{
-    background-color: rgb(15, 32, 54);
-    padding: 0;
-    margin: 0;
-}
-
-.card{
-    align-content: center;
-    width: 50%;
-}
-
-.cards{
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:  #434442;
+    color: #fff;
+    padding: 20px 0;
     display: flex;
     justify-content: space-around;
-    width: 80%;
-    height: 600px;
-    border-radius: 5px;
-    margin: auto;
-    background-color: rgb(16, 58, 98);
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    z-index: 1000;  
+    font-family: monospace;
+ }
+
+header > h1 {
+    margin: 0 20px 0 0;
+}
+
+.tabs {
+    text-align: right;
+}
+
+.tab {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.tab:hover {
+    opacity: 1;
 }
 
 .main{
     display: flex;
     width: 100%;
-    height: 800px;
+    height: 100vh;
     margin-top: 50px;
     justify-content: center;
-    background-color: rgb(15, 32, 54);
+    background-color: #242524;
 }
 
+#actions{
+   margin-top: 50px;
+}
+
+#actions a:hover{
+    background-color: #2b610c;
+}
+
+#inicio{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    border-radius: 5px;
+    margin: auto;
+    background-color: #434442;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+body{
+    background-color: #242524;
+    padding: 0;
+    margin: 0;
+}
+
+.info{
+    align-content: center;
+    width: 50%;
+}
+
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    border-radius: 5px;
+    margin: auto;
+    background-color: #434442;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 
 .text{
     padding: 15px;
@@ -52,15 +105,11 @@ body{
 
 
 #stacks img {
-    background-color: rgb(16, 58, 98);
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
-    border-width: 1px 1px 1px 1px;
-    border-style: solid;
-    border-color: rgb(15, 32, 54);
 }
 
 #projects{
-    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -71,6 +120,9 @@ body{
 
 .projeto{
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .projeto:last-of-type {
@@ -106,15 +158,13 @@ body{
 
 .descricao{
     flex-direction: column;
-    /* justify-content: space-between; */
-    background-color: rgb(16, 58, 98);
-    height: 50%;
-    border-radius: 0px 10px 10px 0px;
-    align-self: center;
-    display: flex;
-    border-color: rgb(255, 255, 255);
-    border-style: solid;
-    border-width: 1px 1px 1px 0px;
+    justify-content: space-between;
+    background-color:  #68964d;;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 20px;
+    width: 50%;
+    text-align: start;
 }
 
 .descricao div{
@@ -142,21 +192,14 @@ body{
     .projeto { grid-template-columns: repeat(2, 1fr); }
 }
 
-#actions a{
-    margin-top: 20px;
-    justify-content: center; 
-    display: flex;
-    border-color: rgb(254, 255, 255);
-    border-style: solid;
-    border-width: 1px 1px 1px 1px;
-    flex: none;
+
+
+#subtitle{
+    text-align: start;
+    font-size: 20px;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
 }
-
-#actions a:hover{
-    background-color: rgb(9, 36, 61);
-}
-
-
 
 /* ===== */
 
@@ -182,21 +225,14 @@ body{
     font-size: 50px;
     font-family: monospace;
     margin-bottom: 0px;
-    color: rgb(240, 243, 149);
-}
-
-#subtitle{
-    text-align: center;
-    font-size: 20px;
-    font-family: monospace;
-    color: rgb(240, 243, 149);
+    color: rgb(255, 255, 255);
 }
 
 #titleCursor{
     text-align: center;
     font-size: 50px;
     font-family: monospace;
-    color: rgb(240, 243, 149);
+    color: rgb(255, 255, 255);
     animation: blink .7s infinite;
 }
 
@@ -204,7 +240,7 @@ body{
     text-align: center;
     font-size: 20px;
     font-family: monospace;
-    color: rgb(240, 243, 149);
+    color: rgb(255, 255, 255);
     animation: blink .7s infinite;
 }
 
@@ -240,7 +276,7 @@ embed{
 } 
 
 a{
-    color: rgb(240, 243, 149);
+    color: rgb(255, 255, 255);
 }
 
 .profile{ 
@@ -288,9 +324,9 @@ button{
     height: 60px;
     width: 110px;
     background-color: transparent;
-    border-color: rgb(240, 243, 149);
+    border-color: rgb(255, 255, 255);
     border-radius: 10px;
-    color:  rgb(240, 243, 149);
+    color:  rgb(255, 255, 255);
 }
 
 #contact{
@@ -299,7 +335,7 @@ button{
     display: block;
     height: 50px;
     width: 50px;
-    background-color: rgb(240, 243, 149);
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
 }
 
@@ -324,43 +360,6 @@ button{
 .bio:hover:before{
     border-width: 0 150px 150px 0;
     border-color: #eee  rgb(1, 44, 100);
-}
-
-
- header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgb(16, 58, 98);
-    color: #fff;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 1000;  
-    font-family: monospace;
- }
-
-header > h1 {
-    margin: 0 20px 0 0;
-}
-
-.tabs {
-    text-align: right;
-}
-
-.tab {
-    display: inline-block;
-    margin: 0 20px;
-    font-size: 18px;
-    text-decoration: none;
-    color: #fff;
-    opacity: 0.7;
-}
-
-.tab:hover {
-    opacity: 1;
 }
 
 #sobre{
