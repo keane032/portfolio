@@ -3,6 +3,21 @@
       window.open('https://github.com/keane032/dungeon_explorer');
   };
 
+  document.getElementById("app").onclick = function () {
+    window.open('https://play.google.com/store/apps/details?id=com.br.rpgboard');
+};
+
+
+  $(document).ready(function(){
+    $('#projects').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        arrows: false
+    });
+});
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
