@@ -23,6 +23,11 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+hr{
+    border-color:#aaa;
+    box-sizing:border-box;
+    width:100%;  
+  }
 
 header > h1 {
     margin: 0 20px 0 0;
@@ -223,6 +228,22 @@ body{
     color: rgb(255, 255, 255);
 }
 
+
+#contact{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+#contact:hover{
+    background-color: #2b610c;
+}
+
+
 /* ===== */
 
 #box{
@@ -349,16 +370,6 @@ button{
     border-color: rgb(255, 255, 255);
     border-radius: 10px;
     color:  rgb(255, 255, 255);
-}
-
-#contact{
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    height: 50px;
-    width: 50px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
 }
 
 .bio{
