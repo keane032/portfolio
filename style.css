@@ -95,7 +95,6 @@ body{
     width: 50%;
 }
 
-
 .cards{
     display: flex;
     justify-content: space-around;
@@ -145,8 +144,7 @@ body{
     width: 70% !important;
     justify-content: center;
     align-items: center;
-    flex-direction: row !important;
-    flex-direction: row; 
+    flex-direction: row !important; 
     padding-top: 20px; 
     padding-bottom: 20px;
     border-radius: 5px;
@@ -171,7 +169,7 @@ body{
 .projeto h3{
     font-size: 20px;
     font-family: monospace;
-    color: rgb(255, 255, 255);;
+    color: rgb(255, 255, 255);
 }
 
 .projeto a {
@@ -243,6 +241,36 @@ body{
     background-color: #2b610c;
 }
 
+.projetos-web{
+    display: flex;
+    flex-direction: row !important; 
+    justify-content: space-around; 
+    margin-right: 20px; 
+    margin-left: 20px;
+}
+
+.card-projeto-web{
+    flex-direction: column;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    background-color:  rgba(0, 0, 0, 0.56);
+    font-size: 20px;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+    width: 33% !important;
+    justify-content: center;
+    align-items: center; 
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.card-img{
+    width: 100%; 
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px;
+}
 
 /* ===== */
 
