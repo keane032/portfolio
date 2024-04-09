@@ -7,6 +7,10 @@
     window.open('https://play.google.com/store/apps/details?id=com.br.rpgboard');
 };
 
+document.getElementById("angular").onclick = function () {
+  window.open('https://keane032.github.io/angular-portfolio/?name=keane032');
+};
+
 
   $(document).ready(function(){
     $('#projects').slick({

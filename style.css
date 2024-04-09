@@ -60,14 +60,30 @@ header > h1 {
 }
 
 #actions{
-   margin-top: 50px;
    display: flex;
    align-self: center;
    align-items: center;
    border-width: 1px;
    border: #fff;
    justify-content: center;
+   padding: 10px;
+    border-radius: 5px;
    /* border-style: solid; */
+}
+
+code{
+    background-color: #4CAF50;
+    color: white; 
+    padding: 5px ; 
+    font-size: 18px; 
+    border: none; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#angular{
+    padding: 10px;
+    border-radius: 5px;
 }
 
 #actions a {
@@ -81,7 +97,8 @@ header > h1 {
  }
 
 #actions a:hover{
-    background-color: #2b610c;
+    background-color: #5390D9;
+    cursor: pointer;
 }
 
 body{
@@ -238,7 +255,7 @@ body{
 }
 
 #contact:hover{
-    background-color: #2b610c;
+    background-color: #5390D9;
 }
 
 .projetos-web{
@@ -252,7 +269,7 @@ body{
 .card-projeto-web{
     flex-direction: column;
     border-radius: 5px;
-    text-align: center;
+    text-align: start;
     width: 100%;
     background-color:  rgba(0, 0, 0, 0.56);
     font-size: 20px;
