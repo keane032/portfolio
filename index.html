@@ -8,19 +8,12 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-
-    <!-- <header>
-        <h1>Portfólio</h1>
-        <div class="tabs">
-            <a class="tab" href="#inicio">Inicio</a>
-            <a class="tab" href="#stacks">Stacks</a>
-        </div>
-    </header> -->
-
+<body style="background-color: #224b27;">
+    <div style="display: flex; flex-direction: row; max-width: 1400px; margin: auto;">
+<div>
     <div class="main">
         <div id="inicio">
-            <div>
+            <div style="width: 33%;">
                 <div>
                     <img id="profile" alt="Avatar" src="./assets/eu.png" >
                 </div>
@@ -45,7 +38,7 @@
                 </div>
                 <div id="boxtitle">
                     <div id="subtitle">                 
-                        <h3>Quem sou eu?</h3><br/> 
+                        <h3>Quem sou eu?</h3>
                         <p>Sou um desenvolvedor Mobile e Web apaixonado pelas mais recentes tecnologias do mercado, além de ser um entusiasta fervoroso de Pixel Art. 
                         Ao longo da minha carreira, tenho colaborado em diversos projetos utilizando JavaScript, React Native e Flutter, buscando sempre aprimorar minhas habilidades e oferecer soluções inovadoras. 
                         Possuo formação em Sistemas de Informação pela UFC.</p>
@@ -110,8 +103,14 @@
                         </div>
                 </div>
             </div>
-            <p id="title">Projetos Web</p>
-            <div class="projetos-web">
+        </div>
+        </div>
+    
+     <div style="display: flex; flex-direction: column; "> 
+        <div>
+            <img style="margin: auto; width: 100px; height: 100px; display: block; margin-top: 10%;" alt="Avatar" src="./assets/coin.gif" >
+        </div>
+        <p id="title">Projetos Web</p>
                 <div class="card-projeto-web">
                     <img class="card-img"  src="./assets/angular.png" >
                     <h3 class="text">Github API</h3>
@@ -126,11 +125,9 @@
                     <div id="actions">
                         <a id="angular">Github</a>
                     </div>
-                </div>        
-            </div>
-            
+                </div>               
         </div>
-        </div>
+    </div>
     <script src="./index.js"></script>
 </body>
 </html>
