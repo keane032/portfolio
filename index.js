@@ -1,7 +1,4 @@
 
-  // document.getElementById("repositorioJogo").onclick = function () {
-  //     window.open('https://github.com/keane032/dungeon_explorer');
-  // };
 
   document.getElementById("app").onclick = function () {
     window.open('https://play.google.com/store/apps/details?id=com.br.rpgboard');
