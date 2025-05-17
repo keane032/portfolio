@@ -15,22 +15,37 @@
 
 </head>
 
-<body style="background-color: #6b3a9b; height: 100vh;">
+<body style="background-color:  #171718; height: 100vh;">
     <header style="justify-content: space-between; flex-direction: row; display: flex; padding: 20px;">
-        <div>
-            <img style="width: 50px; height: 50px;" alt="Avatar" src="./assets/coin.gif" >
-        </div>
-        <nav>
+        <nav style="display: flex; flex-direction: row; align-items: center;">
+            <div>
+                <img style="width: 50px; height: 50px;" alt="Avatar" src="./assets/coin.gif" >
+            </div>
             <ul style="display: flex;flex-direction: row;">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#especialidades">Especialidades</a></li>
-                <li><a href="#stacks">Stack</a></li>
+                <li><a href="#stacks">Stacks</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
             </ul>
         </nav>
+            <div style=" align-items: center; flex-direction: row; display: flex; ">
+                <a href="https://github.com/keane032" style="align-items: center; display: flex; margin-right: 20px;">
+                    <div style="border-radius: 50%; background-color: #8EDF5F; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
+                        <img style="height: 40px;" src="assets/github.svg" alt="GitHub">
+                    </div>
+                    github
+                </a>
+
+                <a href="https://www.linkedin.com/in/roy-avila/" style="align-items: center; display: flex;">
+                    <div style="border-radius: 50%; background-color: #8EDF5F; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
+                        <img style="height: 40px;" src="assets/in.png" alt="LinkedIn">
+                    </div>
+                    linkedin
+                </a>
+            </div>         
     </header>
     <main>
-        <section id="inicio" class="inicio" style="padding: 20px 4%;">
+        <section id="inicio" class="inicio" style="padding: 20px 10%;">
                 <div style="display: flex; flex-direction: row;">
                     <div class="flutuante" style="display: flex; align-items: center; justify-content: center;">
                         <img style="height: 80%; border-radius: 50%;"
@@ -38,19 +53,11 @@
                     </div>
                 <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
                     <div class="texto-inicio">
-                        <h1>Roy keane.</h1>
-                        <h3>Quem sou eu?</h3>
+                        <h1>Olá sou </h1><h1 style="color: #8EDF5F;">Roy keane.</h1>
                         <p>Sou um desenvolvedor Mobile e Web apaixonado pelas mais recentes tecnologias do mercado, além de ser um entusiasta fervoroso de Pixel Art. 
                         Ao longo da minha carreira, tenho colaborado em diversos Especialidades utilizando JavaScript, React Native e Flutter, buscando sempre aprimorar minhas habilidades e oferecer soluções inovadoras. 
                         Possuo formação em Sistemas de Informação pela UFC.</p>
-                        <div style="justify-content: center; align-items: center; flex-direction: row; display: flex;">
-                            <a href="https://github.com/keane032">
-                                <img style="height: 40px;" src="assets/github.svg"></img>
-                            </a>
-                            <a href="https://www.linkedin.com/in/roy-avila/">
-                                <img style="height: 40px;" src="assets/in.png"></img>
-                            </a>
-                        </div>
+                       
                     </div>
                     </div>
                 </div>
@@ -66,7 +73,7 @@
                 <a>Já trabalhei no desenvolvimento de aplicações web usando framework angular e java spring na api.</a>
                 <!-- <div id="actions">
                     <a id="angular">Github</a>
-                </div> -->
+                </div> --> 
             </div>
           
             <div class="especialidade">
@@ -84,18 +91,29 @@
 
 
 
-    <section id="stacks" class="stacks">
-        <h1 class="titulo">Stacks</h1>
-        <div style="display: flex; flex-direction: row; justify-content: center;">      
-            <img width="100px" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-ar21.svg">   
-            <img width="100px" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg">
-            <img width="100px" src="https://www.vectorlogo.zone/logos/netlifyapp_watercss/netlifyapp_watercss-ar21.svg">
-            <img height="50px" width="100px" src="https://www.vectorlogo.zone/logos/angular/angular-icon.svg"> <br/>
-            <img height="50px" width="100px" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg">    
-            <img width="100px" height="50px" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg">   
-            <img width="100px" height="50px" src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg"> 
-        </div>   
-    </section>
+ <section id="stacks" class="stacks">
+    <h1 class="titulo">Stacks</h1>
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px; height: 300px;">
+        <div style="background: rgba(255, 255, 255, 0.9); padding: 10px; border-radius: 10px;">
+            <img width="100px" height="50px" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-ar21.svg">
+        </div>
+        <div style="background: rgba(255, 255, 255, 0.9); padding: 10px; border-radius: 10px;">
+            <img width="100px" height="50px" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg">
+        </div>
+        <div style="background: rgba(255, 255, 255, 0.9); padding: 10px; border-radius: 10px;">
+            <img width="100px" height="50px" src="https://www.vectorlogo.zone/logos/netlifyapp_watercss/netlifyapp_watercss-ar21.svg">
+        </div>
+        <div style="background: rgba(255, 255, 255, 0.9); padding: 10px; border-radius: 10px;">
+            <img height="50px" width="100px" src="https://www.vectorlogo.zone/logos/angular/angular-icon.svg">
+        </div>
+        <div style="background: rgba(255, 255, 255, 0.9); padding: 10px; border-radius: 10px;">
+            <img height="50px" width="100px" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg">
+        </div>
+        <div style="background: rgba(255, 255, 255, 0.9); padding: 10px; border-radius: 10px;">
+            <img width="100px" height="50px" src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg">
+        </div>
+    </div>
+</section>
 
         <section id="portfolio" class="portfolio">
             <div class="interface">
@@ -108,6 +126,11 @@
                                 Projeto usando Flutter
                         </div>
                     </div>
+                    <div id="integrasus" class="img-port" style="background-image: url(assets/integrasus.png); background-position: center;">
+                        <div class="overlay"> 
+                            <h3>IntegraSUS</h3> 
+                        </div>
+                    </div>
                     <div id="angular" class="img-port" style="background-image: url(assets/angular-small.png);">
                         <div class="overlay"> 
                             <h3>Github API</h3> 
@@ -117,9 +140,9 @@
                 </div>
                 <div class="flex" style="color: aliceblue;">
                     <div style="height: 100%; width: 750px; display: flex; flex-direction: column;margin-top: 5%; margin-bottom: 2%; justify-self: center;">
-                        <h2>Dungeon Explorer</h2>
+                        <h1>Dungeon Explorer</h1>
                         Exemplo de jogo feito com flutter bonfire. Uma poderosa biblioteca para criação de jogos no estilo RPG. <br/>
-                        <p>Para começar a jogar basta clicar em <code>'START'</code> na tela do celular.</p>
+                        <p>Para começar a jogar basta clicar em <code style="color: #8EDF5F;">'START'</code> na tela do celular.</p>
                         Utilize o joystick para se mover pelo mapa e matar os inimigos</br>       
                     </div>
                 </div>
@@ -131,6 +154,25 @@
             </div>
         </section>
 </main>
+<footer>
+    <div style="height: 100px; justify-content: space-around; align-items: center; display: flex; flex-direction: row;">
+        <p style="color: aliceblue;" >Copyright © 2025 Roy Ávila</p>
+        <div style="width: 10%; display: flex; justify-content: space-around; align-items: center;">
+                
+                <a href="https://github.com/keane032" target="_blank" style="text-decoration: none;">
+    <div style="border-radius: 50%; background-color: #8EDF5F; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
+        <img style="height: 40px;" src="assets/github.svg" alt="GitHub">
+    </div>
+</a>
+
+<a href="https://www.linkedin.com/in/roy-avila/" target="_blank" style="text-decoration: none;">
+    <div style="border-radius: 50%; background-color: #8EDF5F; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
+        <img style="height: 40px;" src="assets/in.png" alt="LinkedIn">
+    </div>
+</a>
+        </div>
+    </div>
+</footer>
     <script src="./index.js"></script>
 </body>
 </html>

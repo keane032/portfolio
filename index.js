@@ -12,6 +12,10 @@ document.getElementById("angular").onclick = function () {
   window.open('https://keane032.github.io/angular-portfolio/?name=keane032');
 };
 
+document.getElementById("integrasus").onclick = function () {
+  window.open('https://integrasus.saude.ce.gov.br/#/home');
+};
+
 //   $(document).ready(function(){
 //     $('#projects').slick({
 //         slidesToShow: 1,
