@@ -16,41 +16,67 @@
 </head>
 
 <body style="background-color:  #171718; height: 100vh;">
-    <header style="justify-content: space-between; flex-direction: row; display: flex; padding: 20px;">
-        <nav style="display: flex; flex-direction: row; align-items: center;">
-            <div>
-                <img style="width: 50px; height: 50px;" alt="Avatar" src="./assets/coin.gif" >
-            </div>
-            <ul style="display: flex;flex-direction: row;">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#especialidades">Especialidades</a></li>
-                <li><a href="#stacks">Stacks</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-            </ul>
-        </nav>
-            <div style=" align-items: center; flex-direction: row; display: flex; ">
-                <a href="https://github.com/keane032" style="align-items: center; display: flex; margin-right: 20px;">
-                    <div style="border-radius: 50%; background-color: #8EDF5F; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
-                        <img style="height: 40px;" src="assets/github.svg" alt="GitHub">
+    <header style="justify-content: space-between; flex-direction: column; display: flex; padding: 20px;">
+            <nav  style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
+                <div style="flex-direction: row; display: flex;">
+                    <div>
+                        <img style="width: 50px; height: 50px;" alt="Avatar" src="./assets/coin.gif" >
                     </div>
-                    github
-                </a>
-
-                <a href="https://www.linkedin.com/in/roy-avila/" style="align-items: center; display: flex;">
-                    <div style="border-radius: 50%; background-color: #8EDF5F; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
-                        <img style="height: 40px;" src="assets/in.png" alt="LinkedIn">
-                    </div>
-                    linkedin
-                </a>
-            </div>         
+                    <ul style="display: flex;flex-direction: row;">
+                        <li class="nav-item" ><a href="#inicio">Inicio</a></li>
+                        <li class="nav-item" ><a href="#especialidades">Especialidades</a></li>
+                        <li class="nav-item" ><a href="#stacks">Stacks</a></li>
+                        <li class="nav-item" ><a href="#portfolio">Portfólio</a></li>
+                    </ul>
+                </div>
+                <div class="contato" style="align-items: center; flex-direction: row; display: flex;">
+                    <a href="https://github.com/keane032" style="align-items: center; display: flex; margin-right: 20px;">
+                        <div style="border-radius: 50%; background-color: #8EDF5F; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
+                            <img style="height: 40px;" src="assets/github.svg" alt="GitHub">
+                        </div>
+                        github
+                    </a>
+    
+                    <a href="https://www.linkedin.com/in/roy-avila/" style="align-items: center; display: flex;">
+                        <div style="border-radius: 50%; background-color: #8EDF5F; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
+                            <img style="height: 40px;" src="assets/in.png" alt="LinkedIn">
+                        </div>
+                        linkedin
+                    </a>
+                </div>   
+                <div class="menu-button" >
+                    <button onclick="showMenu()"><img class="icon" src="assets/menu.svg"></button>
+                </div>     
+            </nav>
+            
+            
+            <div class="mobile-menu" >
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#stacks">Stacks</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li>
+                        <a href="https://github.com/keane032" >     
+                            github
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/roy-avila/" >
+            
+                        linkedin
+                    </a>
+                    </li>         
+                </ul>
+            </div>     
     </header>
     <main>
         <section id="inicio" class="inicio" style="padding: 20px 10%;">
-                <div style="display: flex; flex-direction: row;">
+                <div class="info" style="display: flex; flex-direction: row;">
                     <div class="flutuante" style="display: flex; align-items: center; justify-content: center;">
                         <img style="height: 80%; border-radius: 50%;"
                          alt="Avatar" src="./assets/eu.png" >
-                    </div>
+                </div>
                 <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
                     <div class="texto-inicio">
                         <h1>Olá sou </h1><h1 style="color: #8EDF5F;">Roy keane.</h1>
@@ -59,14 +85,13 @@
                         Possuo formação em Sistemas de Informação pela UFC.</p>
                        
                     </div>
-                    </div>
+                </div>
                 </div>
         </section>
 
-    <section id="especialidades" class="Especialidades">
+    <section id="especialidades" class="especialidades">
         <h1 class="titulo">Especialidades</h1>
-        <div style="display: flex; flex-direction: row; justify-content: space-around;">
-
+        <div class="cards-especialidades" style="display: flex; flex-direction: row; justify-content: space-around;">
             <div class="especialidade">
                 <i class="bi bi-file-earmark-code"></i>
                 <h3>Web</h3>
@@ -119,7 +144,7 @@
             <div class="interface">
                 <h1 class="titulo">MEU PORTFÓLIO</h1>
 
-                <div style="display: flex; justify-content: space-around;">
+                <div class="projetos" style="display: flex; justify-content: space-around;">
                     <div id="app" class="img-port" style="background-image: url(assets/app.jpeg);">
                         <div class="overlay">
                             <h3>RPG board</h3> 
@@ -139,7 +164,7 @@
                     </div>
                 </div>
                 <div class="flex" style="color: aliceblue;">
-                    <div style="height: 100%; width: 750px; display: flex; flex-direction: column;margin-top: 5%; margin-bottom: 2%; justify-self: center;">
+                    <div style="height: 100%; display: flex; flex-direction: column;margin-top: 5%; margin-bottom: 2%; justify-self: center;">
                         <h1>Dungeon Explorer</h1>
                         Exemplo de jogo feito com flutter bonfire. Uma poderosa biblioteca para criação de jogos no estilo RPG. <br/>
                         <p>Para começar a jogar basta clicar em <code style="color: #8EDF5F;">'START'</code>.</p>
@@ -156,20 +181,18 @@
 </main>
 <footer>
     <div style="height: 100px; justify-content: space-around; align-items: center; display: flex; flex-direction: row;">
-        <p style="color: aliceblue;" >Copyright © 2025 Roy Ávila</p>
+        <p class="copyright" style="color: aliceblue;" >Copyright © 2025 Roy Ávila</p>
         <div style="width: 10%; display: flex; justify-content: space-around; align-items: center;">
-                
-                <a href="https://github.com/keane032" target="_blank" style="text-decoration: none;">
-    <div style="border-radius: 50%; background-color: #8EDF5F; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
-        <img style="height: 40px;" src="assets/github.svg" alt="GitHub">
-    </div>
-</a>
-
-<a href="https://www.linkedin.com/in/roy-avila/" target="_blank" style="text-decoration: none;">
-    <div style="border-radius: 50%; background-color: #8EDF5F; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
-        <img style="height: 40px;" src="assets/in.png" alt="LinkedIn">
-    </div>
-</a>
+            <a href="https://github.com/keane032" target="_blank" style="text-decoration: none;">
+                <div class="img" style="border-radius: 50%; background-color: #8EDF5F; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
+                    <img class="img" style="height: 40px;" src="assets/github.svg" alt="GitHub">
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/roy-avila/" target="_blank" style="text-decoration: none;">
+                <div class="img" style="border-radius: 50%; background-color: #8EDF5F; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
+                    <img class="img" style="height: 40px;" src="assets/in.png" alt="LinkedIn">
+                </div>
+            </a>
         </div>
     </div>
 </footer>

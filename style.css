@@ -59,6 +59,7 @@ header a:hover{
 }
 
 .texto-inicio {
+    
     h1{
         font-size: 50px;
     }
@@ -161,5 +162,93 @@ section.portfolio{
     background-repeat: no-repeat;  
     width: 100%;
     height: 100%;
-    
+}
+
+.menu-button{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.icon{
+    height: 30px;
+    width: 30px;
+}
+
+@media screen and (max-width: 730px) {
+
+    .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column !important;
+    }
+
+    .projetos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column !important;
+    }
+
+    .cards-especialidades{
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .especialidade{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .img-port{
+        margin: 5px 5px 5px 5px;
+    }
+
+    .nav-item{
+        display: none;
+    }
+
+    .contato{
+        display: none !important;
+    }
+
+    .menu-button {
+        display: block;
+        background-color: transparent;
+    }
+
+    .mobile-menu  ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .flutuante{
+        height: 250px;
+        width: 250px;
+    }
+
+    .info{
+        flex-direction: column !important;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .copyright{
+        font-size: 15px;
+    }
+
+    .img{
+       display: none !important;
+    }
+
+    .titulo{
+       font-size: 35px;
+    }
+
 }
